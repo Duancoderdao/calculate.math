@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+body{
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Orbitron', sans-serif;
+margin-top: 100px;
+color: #ffff;
+/* background-image:  url("https://im.haberturk.com/2022/05/13/ver1652464795/3437870_810x458.jpg"); */
+ /* background: linear-gradient(to bottom, #cc33ff 0%, #006699 90%); */
+background-repeat: no-repeat;
+background-size: 100% ; 
+background-position: center;
+
+}
+
+.contain{
+
+ width: 200px;
+ height: 300px;
+ margin: 0 auto;
+ border-radius: 3px;
+ overflow: hidden;
+ border: 3px solid rgb(193, 184, 184);
+ /* font-size: 1rem; */
+ 
+}
+.screen
+{
+ width: 100%;
+ height:17%;
+ background-color: rgb(128, 142, 140);
+ position: relative;
+}
+.input
+{
+position: absolute;
+top: 10px;
+right: 10px;
+z-index: 999;
+}
+.keyboard
+{
+width: 100%;
+height: 83%;
+background-color: rgb(152, 193, 160);
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+}
+.item {
+  height:50px;
+  outline:none;
+  text-align: center;
+  border: 0.1px solid rgb(209, 209, 209);
+  
+
+
+}
+.item-content{
+    font-size:0.9rem;
+}
+.item:hover {
+    cursor: pointer;
+    background-color: rgb(107, 135, 118);
+}
+.item:first-child{
+   grid-column: 1/span 2;
+   background-color:#5e8d6e;
+}
+.item:first-child:hover {
+  
+    background-color: #169944;
+}
+.item:nth-child(2)
+{
+  background-color: #5f7e7a;
+}
+.item:nth-child(2):hover {
+    background-color: #238c7e;
+}
