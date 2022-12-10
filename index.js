@@ -21,7 +21,7 @@ items.forEach((btn) => {
         input.innerHTML = "0";
       }
     } else if (btn.innerHTML == "=") {
-      input.innerHTML = eval(input.innerHTML);
+      input.innerHTML = Math.round(eval(input.innerHTML));
     } else {
       input.innerHTML += btn.innerHTML;
     }
